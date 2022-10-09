@@ -1,0 +1,162 @@
+.vlt-custom--8131 {
+	bottom: -250px;
+	left: -200px;
+	max-width: 550px;
+}
+
+.vlt-custom--1451 {
+	top: -25px;
+	left: -30px;
+	width: 256px;
+	height: 208px;
+}
+
+@media only screen and (max-width: 575px) {
+	.vlt-custom--1451 {
+		top: -100px;
+		left: -100px;
+	}
+}
+
+.vlt-custom--1512 {
+	bottom: -28vw;
+	left: 50vw;
+	width: 75vw;
+	height: 75vw;
+	background-size: cover;
+}
+
+.vlt-custom--4124 {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 40vw;
+	height: 100%;
+	background-position: top left;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 991px) {
+	.vlt-custom--4124 {
+		right: 0;
+		width: 50vw;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.vlt-custom--4124 {
+		right: -50vw;
+		width: 100vw;
+	}
+}
+
+.vlt-custom--1259 {
+	top: -20px;
+	right: -5px;
+	width: 256px;
+	height: 208px;
+}
+
+.vlt-custom--2355 {
+	bottom: -250px;
+	left: 0;
+	width: 389px;
+	height: 550px;
+}
+video {
+	position:absolute;
+	object-fit:cover;
+	top:0;
+}
+
+.card {
+	width: 240px;
+	height: 340px;
+	border-radius: 16px;
+	background-color: #333333;
+	background-image: linear-gradient(var(--rot), #333333, #767676);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #666666;
+	position: relative;
+	animation: rotate 2s linear infinite;
+  }
+
+  .card img {
+	margin: bottom;
+	border:#333333;
+  }
+  
+  .card a {
+	margin: bottom;
+	margin-bottom: 30%;
+  }
+  
+  .card::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background-image: inherit;
+	filter: blur(16px);
+	animation: rotate 2s linear infinite;
+	opacity: 0.25;
+  }
+  
+  .card::after {
+	content: '';
+	position: absolute;
+	top: var(--border-width);
+	left: var(--border-width);
+	width: calc(100% - calc(var(--border-width) * 2));
+	height: calc(100% - calc(var(--border-width) * 2));
+	background-color: #222233;
+	border-radius: 12px;
+  }
+  
+  .card > span {
+	position: relative;
+	z-index: 1;
+  }
+  
+  @keyframes rotate {
+	from {
+	  --rot: 0deg;
+	}
+	to {
+	  --rot: 360deg;
+	}
+  }
+
+  .btn3 {
+	position: relative;
+	border-radius: 20px;
+	margin-bottom: 5%;
+	width: 200px;
+	height: 60px;
+	border: 3px solid #fff;
+	background-color: transparent;
+	font-size: 25px;
+	color: #fff;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+  }
+  
+  .btn3:hover {
+	color: #632828;
+	cursor: pointer;
+	border: 3px solid transparent;
+	background-color: #fff;
+	box-shadow: 0 0 5px #a81111,
+				0 0 25px #ff5050,
+				0 0 50px #ff9191,
+				0 0 100px #f89797;
+  }
+
